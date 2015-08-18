@@ -20,6 +20,7 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
       'style-src': "'self' 'unsafe-inline'",
+      'img-src': "'self' placehold.it *.aa-cdn.net *.imgix.net data:",
     }
   };
 
