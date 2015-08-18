@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('apps', function() {
-    this.route('show');
+    this.route('show', { path: '/:id' });
   });
   this.route('settings');
 });

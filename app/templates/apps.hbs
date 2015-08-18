@@ -6,7 +6,7 @@
   <div class="col-sm-3">
     <div class="apps-list">
       {{#each model as |app|}}
-        {{#link-to "apps.show" class="app"}}
+        {{#link-to "apps.show" app.id class="app"}}
           <div class="app-name">{{app.name}}</div>
         {{/link-to}}
       {{/each}}
