@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h2>Apps</h2>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="apps-list">
+      {{#each model as |app|}}
+        {{#link-to "apps.show" class="app"}}
+          <div class="app-name">{{app}}</div>
+        {{/link-to}}
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="col-sm-9">
+    {{outlet}}
+  </div>
+</div>

@@ -1,0 +1,68 @@
+.apps-list {
+
+  .app {
+    color: #222;
+    display: block;
+    padding: 1em 0.5em;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    transition: background-color 100ms;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+
+}
+
+.app-title {
+  margin-bottom: 1em;
+
+  .app-title-icon {
+    width: 50px;
+  }
+
+  .app-title-text {
+    display: inline-block;
+    margin: 0 0 0 0.3em;
+    vertical-align: middle;
+  }
+}
+
+.app-versions {
+  list-style-type: none;
+  padding: 0;
+
+  .version {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 1em 0.2em;
+
+    .number {
+      font-size: 1.3em;
+      margin-right: 0.25em;
+      min-width: 300px;
+    }
+
+    .date {
+      color: #888;
+      font-size: 0.93em;
+    }
+
+    .glyphicon-download {
+      color: #444;
+      cursor: pointer;
+      float: right;
+      font-size: 1.2em;
+      transition: color 100ms;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
