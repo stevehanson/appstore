@@ -3,7 +3,13 @@
   <h2 class="app-title-text">{{model.name}}</h2>
 </div>
 
-<p class="description">{{model.description}}</p>
+<i class="glyphicon glyphicon-edit" {{action "toggleEdit"}}></i>
+{{#if isEdit}}
+  {{textarea class="form-control form-group" value=model.description}}
+  <div class="btn btn-primary" {{action "save"}}>Save</div>
+{{else}}
+  <p class="description">{{model.description}}</p>
+{{/if}}
 
 <ul class="app-versions">
   {{#each model.versions as |version|}}

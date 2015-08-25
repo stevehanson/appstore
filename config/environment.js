@@ -19,6 +19,7 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
+      'connect-src': "'self' http://localhost:3000 http://bookstore-api.dev",
       'style-src': "'self' 'unsafe-inline'",
       'img-src': "'self' placehold.it *.aa-cdn.net *.imgix.net data:",
     }
